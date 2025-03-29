@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando formulários em HTML</title>
+    
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Trabalhando com formulários</h2>
+    <form name= "Cadastro" action="processa.php" method="get" accept-charset="UTF-8">
+        <div>
+            <label for="Nome">Nome: <input type="text" name="nome" size="30" placeholder="Digite seu nome aqui: "></label> <br><br><br>
+            <label for="senha">Digite sua senha: <input type="password" name="senha" id="idsenha" maxlength="10" required placeholder="Insira sua senha aqui"></label><br><br><br>
+            <label for="sexo">Sexo: <br><input type="radio" name="sexo" value="F">Feminino <br>
+            <input type="radio" name="sexo" value="M">Masculino <br>
+            <input type="radio" name="sexo" value="N" checked>Prefiro não declarar
+            </label><br><br><br>
+
+            <fieldset>
+                <legend>Marque as opções de seu interesse</legend>
+
+                <input type="checkbox" name="linguagens" id="ling1" value="C#">
+                <label for="ling1">C#</label><br>
+
+                <input type="checkbox" name="linguagens" id="ling2" value="Python">
+                <label for="ling2">Python</label><br>
+
+                <input type="checkbox" name="linguagens" id="ling3" value="PHP">
+                <label for="ling3">PHP</label><br>
+
+                <input type="checkbox" name="linguagens" id="ling4" value="Java">
+                <label for="ling4">Java</label><br>
+
+            </fieldset>
+            <br><br><br>
+
+            <fieldset>
+                <legend>Selecione o grau que deseja aprender</legend>
+                <select name="nivel" id="idnivel" multiple>
+                    <option value="basico" selected>Básico</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="avacado">Avançado</option>
+                    <br>
+                </select>
+            </fieldset>
+
+            <h2>Controles de data e hora</h2>
+            <label for="date">Data de nascimento:</label> <input type="date">
+            <br>
+            <br>
+            <label for="hora">Hora do cadastro</label>
+            <input type="time">
+            <br>
+            <br>
+            <label for="mes">Mês do ano</label>
+            <input type="month">
+            <br>
+            <br>
+
+        <fieldset>
+            <h2>Caixas de texto</h2>
+            
+            <label for="coment">Digite seu comentário na caixa abaixo</label>
+            <br>
+            <textarea rows="8" cols="50" name="comtários" id="coment" maxlength="300" minlength="10"></textarea>
+        </fieldset>
+
+        <h2>Lista de sugestões</h2>
+        <label for="bebidas">Digite a bebida desejada</label>
+        <input type="text" name="bebidas" id="bebida" list="bebidas">
+
+        <datalist id="bebidas">
+            <option value="Chopp">
+            <option value="Vinho tinto">
+            <option value="Vinho rose">
+            <option value="campari">
+            <option value="gin tônica">
+        </datalist>
+        <br>
+        <br>
+            <button>Enviar dados</button>
+        </div>
+    </form>
+</body>
+</html>

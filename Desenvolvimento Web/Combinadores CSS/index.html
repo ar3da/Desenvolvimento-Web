@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinasdores CSS</title>
+</head>
+
+<style>
+    /*Seletor de descendentes (Escreve o ascestral e o descendente)*/
+    div p{
+        background-color: maroon;
+        color: antiquewhite;
+    }
+    /*Seletor de filho (>)*/
+    div > p{
+        background-color: cadetblue;
+        color: burlywood;
+    }
+    /*Seletor de irmão adjacente(O que está logo na sequencia)*/
+    div + h2{
+        text-align: center;
+        color: brown;
+    }
+    /*Seletor de irmão geral (~)*/
+    div ~ p{
+        text-align: center;
+        color: coral;
+        font-size: 30px;
+    }
+</style>
+<body>
+
+    <header>
+        <h2>Combinadores CSS</h2>
+    </header>
+
+    <p>Aula de desenvolvimento Web</p>
+
+    <div id="a">
+        <pre>
+            <p>Parágrafo descendente</p>
+        </pre>
+        <p>Parágrafo Filho</p>
+    </div>
+
+    <h2>Segunda parte do arquivo HTML</h2>
+    <p>Parágrafo da senda parte</p>
+
+    <h2>Terceira parte do arquivo HTML</h2>
+    <p>Parágrafo da terceira parte</p>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+
+    <style>
+        /*Seletor universal*/
+        *{
+            text-align: left;
+            color: lightgreen;
+            background-color: beige;
+        }
+        /*Seletor de elemento*/
+        p, h2{
+            text-align: center;
+            color: coral;
+            font-size: 20px;
+        }
+        /*Seletor de ID*/
+        #id1 {
+            text-align: center;
+            color: blueviolet;
+            font-size: 30px;
+        }
+        /*Seletor por classe*/
+        .cl1{
+            text-align: right;
+            color: black;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Arquivo HTML</h2>
+    <p>Aula de desenvolvimento web</p>
+    <p>Outro parágrafo</p>
+    <p id="id1">Parágrafo com ID</p>
+    <p class="cl1">Parágrafo com classe</p>
+    <h2 class="cl1">Segunda seção do arquivo HTML</h2>
+</body>
+</html>

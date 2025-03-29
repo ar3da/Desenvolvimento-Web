@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo de botões em HTML</title>
+</head>
+<body>
+    <h2>Botões em formulários</h2>
+    
+    <form name= "Cadastro" action="processa.php" method="get" accept-charset="UTF-8">
+        <div>
+            <label for="Nome">Nome: <input type="text" name="nome" size="30" placeholder="Digite seu nome aqui: "></label>
+            <br><br>
+            <label for="senha">Digite sua senha: <input type="password" name="senha" id="idsenha" maxlength="10" placeholder="Insira sua senha aqui"></label>
+            <br><br>
+            <label for="sexo">Sexo: <br><input type="radio" name="sexo" value="F">Feminino <br>
+            <input type="radio" name="sexo" value="M">Masculino <br>
+            <input type="radio" name="sexo" value="N">Prefiro não declarar
+            <br>
+            </label>
+        </div>
+        <input type="submit" name="enviar" value="Enviar">
+        <br>
+        <input type="reset" name="reset" value="Limpar">
+        <br>
+        <button type="button" onclick="alert('Obrigado por visitar o site')" class="estilo">Executar JavaScript</button>
+</body>
+</html>
